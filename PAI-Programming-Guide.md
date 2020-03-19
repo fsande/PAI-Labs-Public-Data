@@ -1,6 +1,16 @@
 
 # PAI Programming Guide
 
+* Aloje todos los programas de su proyecto (práctica) en el directorio `src` o subdirectorios del mismo en caso de que fuera necesario (no lo es en la mayoría de los ejercicios prácticos de PAI).
+* Todos los proyectos (ejercicios de prácticas) deben contar con un fichero `package.json` en el que se especifiquen, entre otros parámetros las dependencias del proyecto.
+La ejecución `de npm install` para su proyecto debe proceder libre de errores o avisos.
+El siguiente sería un ejemplo de ejecución correcta (limpia) de ese comando:
+```
+$ npm install
+added 161 packages from 136 contributors and audited 929 packages in 1.612s
+
+found 0 vulnerabilities
+```
 * `use strict` es obligatorio en todos los programas.
 * Cumplir con lo especificado en la [Guía de estilo](https://google.github.io/styleguide/jsguide.html) 
 de Google es obligatorio en todos los programas.
