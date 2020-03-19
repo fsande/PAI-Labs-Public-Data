@@ -50,7 +50,7 @@ for (let team in scores) {
 puesto que no está inserto en función alguna.
 Esto debiera programarse de forma análoga a:
 ```javascript
-function computeStatistics() {
+function computeGameStatistics() {
   printGame();
   printPlayers();
   printScore();
@@ -61,8 +61,10 @@ function computeStatistics() {
   turnoversToAssists();
 }
 
-computeStatistics();
+computeGameStatistics();
 ```
+donde el programa se 'orquesta' en torno a una función principal `computeGameStatistics()` que a su
+vez (si resulta necesario) se apoya (modularidad) en otras funciones complementarias.
 * El uso explícito de constantes en el código es inadecuado.
 Considere el siguiente fragmento de código:
 ```javascript
