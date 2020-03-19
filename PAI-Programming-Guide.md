@@ -1,5 +1,5 @@
 
-PAI Programming Guide
+# PAI Programming Guide
 
 * `use strict` es obligatorio en todos los programas.
 * Cumplir con lo especificado en la [Guía de estilo](https://google.github.io/styleguide/jsguide.html) 
@@ -10,7 +10,7 @@ se indica que han de escribirse en minúsculas usando si es preciso guión o gui
   Particularmente, cada función y/o método debería tener @desc @param y opcionalmente @returns
 * Cada función ha de tener una única finalidad y su nombre debe reflejar claramente la misma. 
   El siguiente código es incorrecto porque la función realiza dos tareas diferentes. 
-```
+```javascript
 function gameIdPlayerProperties(){
   console.log(`ID del partido: ${baskteballData.id}`);
   console.log(Object.keys(baskteballData.players[0]));  
@@ -19,7 +19,7 @@ function gameIdPlayerProperties(){
 * Todo el código ha de estar encapsulado en funciones. 
 Toda sentencia de código (salvo declaraciones) ha de pertencer al código de alguna función o método.
 A pesar de que Javascript lo permita, un código como el siguiente no es aceptable
-```
+```javascript
 const THREE_POINTER_SCORE = 3;
 
 let scores = {}; 
@@ -39,7 +39,7 @@ for (let team in scores) {
 ```
 puesto que no está inserto en función alguna.
 Esto debiera programarse de forma análoga a:
-```
+```javascript
 function computeStatistics() {
   printGame();
   printPlayers();
@@ -55,7 +55,7 @@ computeStatistics();
 ```
 * El uso explícito de constantes en el código es inadecuado.
 Considere el siguiente fragmento de código:
-```
+```javascript
 if (element.teamName === 'Pacers') {
   puntosPacers += puntosJugador;
 }   
