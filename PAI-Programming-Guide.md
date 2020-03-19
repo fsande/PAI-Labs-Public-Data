@@ -27,7 +27,7 @@ function gameIdPlayerProperties(){
 }
 ```
 * Todo el código ha de estar encapsulado en funciones. 
-Toda sentencia de código (salvo declaraciones) ha de pertencer al código de alguna función o método.
+Toda sentencia de código (salvo eventualmente declaraciones) ha de pertencer al código de alguna función o método.
 A pesar de que Javascript lo permita, un código como el siguiente no es aceptable
 ```javascript
 const THREE_POINTER_SCORE = 3;
@@ -88,6 +88,9 @@ if (element.teamName === HAWKS) {
 particularmente si ese par de constantes se usa con frecuencia en el código.
 Esta regla se aplica a todo tipo de constantes, salvo 0 y 1.
 
-
+* Debe minimizarse la utilización de entidades globales. Cada declaración (de variables, constantes, funciones, etc.) debe mantener su ámbito léxico lo más acotado posible.
+* Las funciones no deben producir efectos laterales y menos aún de forma inadvertida.
+Si una función modifica algún elemento que es global a la misma, ese elemento ha de ser pasado como parámetro a la función para evidenciar esa situación.
+* Incluso si la función no modifica, pero lee o utiliza un elemento que le es global, es deseable pasarlo como parámetro para advertir igualmente de esa situación.
 
 
