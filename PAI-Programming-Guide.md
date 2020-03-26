@@ -27,6 +27,29 @@ function gameIdPlayerProperties(){
   console.log(Object.keys(baskteballData.players[0]));  
 }
 ```
+* **Documentación de cabecera**. Todos los ficheros correspondientes a programas o módulos (extensión `.js`) deben estar documentados en su cabecera con una información suficiente para el fichero en cuestión.
+Un ejemplo de tal documentación podría ser el siguiente:
+```javascript
+/**
+* Universidad de La Laguna
+* Escuela Superior de Ingeniería y Tecnología
+* Grado en Ingeniería Informática
+* Asignatura: Programación de Aplicaciones Interactivas (PAI)
+* Curso: 3º
+* @title Práctica 06 - Quickhull. Drawing on Canvas.
+* @file Programa que implementa el algoritmo quickhull. La ejecución del programa se muestra 
+* gráficamente en un entorno HTML.
+* El programa toma como entrada un número de puntos para calcular la envolvente convexa.
+* @author Albert Einstein <alu0101XXXXXX@ull.edu.es>
+* @copyright Albert Einstein 2020
+* @version 1.0
+* @see https://en.wikipedia.org/wiki/Quickhull#/media/File:Animation_depicting_the_quickhull_algorithm.gif
+* @see https://en.wikipedia.org/wiki/Quickhull
+* @see https://github.com/fsande/PAI-P06-QuickHull/blob/master/2019-2020_p06_QuickHull.md
+* @see https://developer.mozilla.org/es/docs/Web/API/WindowTimers/setInterval
+*/
+
+```
 * **Encapsulamiento en funciones** (código huérfano). Todo el código ha de estar encapsulado en funciones. 
 Toda sentencia de código (salvo eventualmente declaraciones) ha de pertencer al código de alguna función o método.
 A pesar de que Javascript lo permita, un código como el siguiente no es aceptable
