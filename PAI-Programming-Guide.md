@@ -19,6 +19,18 @@ de Google es obligatorio en todos los programas.
 se indica que han de escribirse en minúsculas usando si es preciso guión o guión bajo y ningún otro caracter de puntuación.
 * **JSDoc** El uso de JSDoc es obligatorio en todos los programas. 
   Particularmente, cada función y/o método debería tener @desc @param y opcionalmente @returns
+  Se muestra a continuación un ejemplo de documentación de una función:
+```javascript
+/**
+* @desc Función para dibujar una linea entre dos puntos en un context.
+* @param {HTMLCanvasElement} context - context del canvas
+* @param {Object} beginPoint - punto origen
+* @param {Object} endPoint - punto final
+* @param {Number} width - anchura de la linea
+* @param {string} colour - color de la linea
+*/
+```
+
 * **Funciones y Métodos**. Cada función ha de tener una única finalidad y su nombre debe reflejar claramente la misma. 
   El siguiente código es incorrecto porque la función realiza dos tareas diferentes. 
 ```javascript
