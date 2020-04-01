@@ -2,7 +2,7 @@
 # PAI Programming Guide
 
 * **Estructura del Proyecto**. Aloje todos los programas de su proyecto (práctica) en el directorio `src` o subdirectorios del mismo en caso de que fuera necesario (no lo es en la mayoría de los ejercicios prácticos de PAI).
-* **package.json**. Todos los proyectos (ejercicios de prácticas) deben contar con un fichero `package.json` en el que se especifiquen, entre otros parámetros las dependencias del proyecto.
+* **package.json**. Todos los proyectos (ejercicios de prácticas) deben contar con un fichero `package.json` en el que se especifiquen, entre otros parámetros las dependencias del proyecto así como el nombre del autor del mismo.
 La ejecución `de npm install` para su proyecto debe proceder libre de errores o avisos.
 El siguiente sería un ejemplo de ejecución correcta (limpia) de ese comando:
 ```
@@ -11,7 +11,7 @@ added 161 packages from 136 contributors and audited 929 packages in 1.612s
 
 found 0 vulnerabilities
 ```
-* **`use strict`** es obligatorio en todos los programas.
+* **`use strict;`** es obligatorio en todos los programas. 
 * **Estilo**. Cumplir con lo especificado en la [Guía de estilo](https://google.github.io/styleguide/jsguide.html) 
 de Google es obligatorio en todos los programas.
 * Salvo en situaciones muy concretas no se admiten identificadores de un único caracter. 
@@ -123,7 +123,7 @@ if (element.teamName === HAWKS) {
 ```
 particularmente si ese par de constantes se usa con frecuencia en el código.
 Esta regla se aplica a todo tipo de constantes, salvo 0 y 1.
-
+* **Realización de pruebas (testing)**. La simpre presencia de tests del código nunca garantiza la corrección del mismo, pero un buen diseño de pruebas resulta de gran ayuda para evitar errores. Más que en la cantidad de tests a desarrollar, preste atención a la calidad de los mismos. No evalúe condiciones 'obvias' y centre preferentemente su atención en evaluar condiciones que potencialmente se pudieran producir en su código. 
 * **Ámbito global**. Debe minimizarse la utilización de entidades globales. Cada declaración (de variables, constantes, funciones, etc.) debe mantener su ámbito léxico lo más acotado posible.
 * **Efectos laterales**. Las funciones no deben producir efectos laterales y menos aún de forma inadvertida.
 Si una función modifica algún elemento que es global a la misma, ese elemento ha de ser pasado como parámetro a la función para evidenciar esa situación.
