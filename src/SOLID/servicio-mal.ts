@@ -9,12 +9,12 @@
  * @description Programa que saluda en diferentes idiomas
  */
 
-/** @description Servicio de Saludo en diferentes idiomas */
+/** @description Servicio desarollado en diferentes idiomas */
 class ServicioIdiomas {
   constructor(private idioma: string) { }
 
   /** 
-   * @description Devuelve un saludo en el idioma configurado 
+   * @description Devuelve un mensaje de bienvenida en el idioma configurado 
    * @return La cadena del correspondiente saludo
    */
   iniciar(): string {
