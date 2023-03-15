@@ -10,26 +10,26 @@
  */
 
 /** @description Servicio de Saludo en diferentes idiomas */
-class ServicioSaludo {
+class ServicioIdiomas {
   constructor(private idioma: string) { }
 
   /** 
    * @description Devuelve un saludo en el idioma configurado 
    * @return La cadena del correspondiente saludo
    */
-  saludar(): string {
+  iniciar(): string {
     switch (this.idioma) {
-      case 'en': { return 'Hello'; }
-      case 'es': { return 'Hola'; }
-      case 'fr': { return 'Bonjour'; }
+      case 'en': { return 'Hello! Service in English'; }
+      case 'es': { return 'Hola! Servicio en español'; }
+      case 'fr': { return 'Bonjour ! service en français'; }
       default: return '';
     }
   }
 }
 
 export function main(): void { 
-  const saludoES: ServicioSaludo = new ServicioSaludo('es');
-  console.log(saludoES.saludar());
+  const servicioES: ServicioIdiomas = new ServicioIdiomas('es');
+  console.log(servicioES.iniciar());
 }
 
 main();
