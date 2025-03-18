@@ -38,8 +38,8 @@ class Transportation {
 export function main(): void { 
   const truck = new Transportation('Truck', 100);
   const ship = new Transportation('Ship', 5000);
-  console.log('Trasnport price for truck: ' + truck.computePrice()); 
-  console.log('Trasnport price for ship: ' + ship.computePrice()); 
+  console.log('Trasnport price for truck: ' + truck.computePrice() + ' euros.'); 
+  console.log('Trasnport price for ship: ' + ship.computePrice() + ' euros.'); 
 }
 
 main();
