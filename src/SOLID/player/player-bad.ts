@@ -7,8 +7,10 @@
  * @author F de Sande
  * @since Mar 12, 2024
  * @description Program to manage different kinds of Media Players
+ *              Not all players have the same capabilities, and as a result, 
+ *              when one of them attempts a function it does not support, 
+ *              it displays a message stating that it cannot perform that action.
  *              The design violates one of the SOLID principles.
- * 
  */
 
 /** @description Represents a Media Player that can play and record audio */
