@@ -5,7 +5,7 @@
  * Programación de Aplicaciones Interactivas
  *
  * @author YOUR NAME
- * @since Mar 19, 2025
+ * @since Mar 18, 2026
  * @description Program to manage different kinds of Media Players
  *
  *              EXPLAIN (English or Spanish) the reasons why the original code violates some SOLID Principle
